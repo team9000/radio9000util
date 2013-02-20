@@ -1,0 +1,38 @@
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif
+
+#include "version.h"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION APP_VERSION
+ PRODUCTVERSION APP_VERSION
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+			VALUE "CompanyName", "Wootalyzer Development"
+            VALUE "FileDescription", "Wootalyzer"
+            VALUE "FileVersion", APP_VERSION_STR
+            VALUE "InternalName", "wootalyzer.exe"
+            VALUE "LegalCopyright", "(c) Wootalyzer Development. All rights reserved."
+            VALUE "OriginalFilename", "wootalyzer.exe"
+            VALUE "ProductName", "Wootalyzer - Deal a Day Tracker"
+            VALUE "ProductVersion", APP_VERSION_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END

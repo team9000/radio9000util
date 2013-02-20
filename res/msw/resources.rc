@@ -1,0 +1,9 @@
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif
+
+wicon		ICON	"icon.ico"
+
+#define wxUSE_NO_MANIFEST 1
+#include "wx/msw/wx.rc"
+#include "version.rc"

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_PropertySheetDisplayName>wx</_PropertySheetDisplayName>
+    <IncludePath>$(WXDIR)\lib\vc_lib\mswu;$(WXDIR)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(WXDIR)\lib\vc_lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;wsock32.lib;netapi32.lib;winmm.lib;oldnames.lib;mpr.lib;uuid.lib;rpcrt4.lib;comctl32.lib;odbc32.lib;wxbase29u.lib;wxbase29u_net.lib;wxmsw29u_core.lib;wxmsw29u_adv.lib;wxmsw29u_html.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregexu.lib;wxexpat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>__WXMSW__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>__WXMSW__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

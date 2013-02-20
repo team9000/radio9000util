@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <WXDIR>D:\code\wxWidgets-2.9.2</WXDIR>
+    <BASSDIR>D:\code\bass24</BASSDIR>
+    <CURLDIR>D:\code\curl-7.22.0</CURLDIR>
+    <HGPATH>C:\Program Files\TortoiseHg\hg.exe</HGPATH>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="WXDIR">
+      <Value>$(WXDIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="BASSDIR">
+      <Value>$(BASSDIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="CURLDIR">
+      <Value>$(CURLDIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="HGPATH">
+      <Value>$(HGPATH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

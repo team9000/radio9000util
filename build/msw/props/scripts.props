@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <_OUTDIR>$(OUTDIR)</_OUTDIR>
+    <_PROJECTDIR>$(PROJECTDIR)</_PROJECTDIR>
+    <_TARGETNAME>$(TARGETNAME)</_TARGETNAME>
+    <_CONFIGURATION>$(CONFIGURATION)</_CONFIGURATION>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <PreBuildEvent>
+      <Command>scripts\pre.bat</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>scripts\post.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="_OUTDIR">
+      <Value>$(_OUTDIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="_PROJECTDIR">
+      <Value>$(_PROJECTDIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="_TARGETNAME">
+      <Value>$(_TARGETNAME)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="_CONFIGURATION">
+      <Value>$(_CONFIGURATION)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
